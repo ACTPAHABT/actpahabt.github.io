@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:700|Raleway:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="wigth=device-wigth, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="description" content="demo layout ActiveBox">
     <title>ActiveBox</title>
 </head>
 <body>
@@ -36,21 +39,21 @@
 </svg>
 
   <!-- Header -->
-  <header class='header'>
+  <header class="header" id="header">
     <div class="container">
       <div class="header__inner">
         <div class="header__logo">
           <img src="img/ActiveBox-logo.png" alt="">
         </div>
 
-        <nav class="nav">
-          <a class="nav__link" href="#">Features</a>
-          <a class="nav__link" href="#">Works</a>
-          <a class="nav__link" href="#">Our Team</a>
-          <a class="nav__link" href="#">Testimonials</a>
-          <a class="nav__link" href="#">Download</a>
+        <nav class="nav" id="nav">
+          <a class="nav__link" href="#" data-scroll="#features">Features</a>
+          <a class="nav__link" href="#" data-scroll="#works">Works</a>
+          <a class="nav__link" href="#" data-scroll="#team">Our Team</a>
+          <a class="nav__link" href="#" data-scroll="#testimonials">Testimonials</a>
+          <a class="nav__link" href="#" data-scroll="#download">Download</a>
         </nav>
-        <button class="burger" type="button">
+        <button class="burger" type="button" id="navToggle">
           <span class="burger__item">Menu</span>
         </button>
       </div>
@@ -58,7 +61,7 @@
   </header>
 
   <!-- Intro -->
-  <div class="intro">
+  <div class="intro" id="intro">
     <div class="container">
       <div class="intro__inner">
         <h1 class="intro__title">Your Favorite One Page Multi Purpose Template</h1>
@@ -70,7 +73,7 @@
 
   <!-- Features -->
   <div class="container">
-    <div class="features">
+    <div class="features" id="features">
       <div class="features__item">
         <img class="features__icon" src="img/features/feature-1.png" alt="">
         <h4 class="features__title">Easily Customised</h4>
@@ -105,7 +108,7 @@
   </div><!-- /.ccontainer -->
 
   <!-- Works -->
-  <div class="works">
+  <div class="works" id="works">
     <div class="works__item">
       <img class="works__photo" src="img/works/work-1.jpg" alt="">
       <div class="works__content">
@@ -165,7 +168,7 @@
   </div> <!-- /.works -->
 
   <!-- Team -->
-  <div class="team">
+  <div class="team" id="team">
     <div class="container">
       <div class="team__inner">
         <div class="team__item">
@@ -273,22 +276,42 @@
   </div><!-- /.team -->
 
     <!-- Testimonials -->
-    <div class="testimonials">
+    <div class="testimonials" id="testimonials">
       <div class="container">
-        <div class="testimonials__item">
-          <div class="testimonials__photo">
-            <img class="testimonials__img"src="img/testimonials/testimonials-1.jpg" alt="">
+
+        <div class="testimonials__slider" id="testimonialsSlider">
+          <div class="slick-item">
+            <div class="testimonials__item">
+              <div class="testimonials__photo">
+                <img class="testimonials__img"src="img/testimonials/testimonials-1.jpg" alt="">
+              </div>
+              <div class="testimonials__content">
+                <div class="testimonials__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+                <div class="testimonials__aurhor">Susan Sims, Interaction Designer at XYZ</div>
+              </div>
+            </div>
           </div>
-          <div class="testimonials__content">
-            <div class="testimonials__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
-            <div class="testimonials__aurhor">Susan Sims, Interaction Designer at XYZ</div>
+
+
+
+          <div class="slick-item">
+            <div class="testimonials__item">
+              <div class="testimonials__photo">
+                <img class="testimonials__img"src="img/testimonials/testimonials-1.jpg" alt="">
+              </div>
+              <div class="testimonials__content">
+                <div class="testimonials__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quaInteger posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+                <div class="testimonials__aurhor">Aenean Donec, Designer at XYZ</div>
+              </div>
+            </div>
           </div>
         </div>
+
       </div><!-- /.container -->
     </div><!-- /.testimonials -->
 
     <!-- Download -->
-    <div class="download">
+    <div class="download" id="download">
       <div class="container">
         <h3 class="download__title">Are You Ready to Start? Download Now For Free!</h3>
         <div class="download__text"><p>
@@ -350,6 +373,9 @@
       </div><!-- /.copyright -->
     </footer>
 
+        <!-- JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="app.js"></script>
 
 </body>
 </html>
