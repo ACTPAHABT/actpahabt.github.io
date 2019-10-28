@@ -387,7 +387,6 @@ p {
 }
 
 .testimonials__slider {
-  /* height: 500px; */
   overflow: hidden;
 }
 
@@ -562,6 +561,7 @@ p {
 /* Media
 ===================*/
 @media (max-width: 991px) {
+
 /* Navigation */
 .nav {
   display: none;
@@ -633,6 +633,7 @@ margin-right: auto;
 }
 
 @media (max-width: 767px) {
+
 /* Intro */
 .intro {
   height: auto;
@@ -718,6 +719,7 @@ margin-right: auto;
 
 
 @media (max-width: 414px) {
+
 /* Testimonials */
 .testimonials__img {
   right: -100px;
