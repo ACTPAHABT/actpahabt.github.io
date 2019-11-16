@@ -1,5 +1,6 @@
 var containerId = '#tabs-container';
 var tabsId = '#tabs';
+var textId = '#intro__text';
 
 $(document).ready(function(){
     // Preload tab on page load
@@ -28,3 +29,19 @@ function loadTab(tabObj){
         $(containerId).fadeIn('fast');
     });
 }
+
+// Change text color
+$('#buttonBlack').click( function() { $('#intro__text').css('color','#2B2A2C'); });
+$('#buttonRed').click( function() { $('#intro__text').css('color','#dc1818'); } );
+
+// Change buttom
+$(document).ready(function() {
+  $('#buttonRed').click(function() {
+    $('#buttonRed').hide();
+    $('#buttonBlack').show();
+  });
+  $('#buttonBlack').click(function() {
+    $('#buttonBlack').hide();
+    $('#buttonRed').show();
+  });
+});

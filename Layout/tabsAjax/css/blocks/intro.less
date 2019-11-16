@@ -1,18 +1,40 @@
 // main: ../style.less
 
 .intro {
-
+padding-top: 150px;
 }
+
+.intro__title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: @black;
+  font-weight: 700;
+}
+
+.intro__subtitle {
+  font-size: 1rem;
+  color: @black;
+	margin-bottom: 0.5rem;
+}
+
+.intro__text {
+  font-size: 1rem;
+  color: @black;
+  margin-bottom: 1rem;
+}
+
 UL.mytabs {
 	position: relative;
 	z-index: 2;
 }
+
 UL.mytabs, UL.mytabs LI {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	float: left;
 }
+
 UL.mytabs LI { padding: 0 5px; }
 UL.mytabs LI A {
 	float: left;
@@ -24,14 +46,17 @@ UL.mytabs LI A {
 	color: #333333;
 	height: 2rem;
 }
+
 UL.mytabs LI A:HOVER, UL.mytabs LI.current A {
 	background: #FFFFFF;
 }
+
 UL.mytabs LI.current A {
 	font-weight: bold;
 	font-size: 1rem;
 	border-bottom: 1px solid #FFFFFF;
 }
+
 .mytabs-container {
 	position: relative;
 	z-index: 1;
@@ -40,4 +65,5 @@ UL.mytabs LI.current A {
 	padding: 0.7rem;
 	top: -1px;
 	background:#fff;
+	min-height: 280px;
 }
