@@ -1,3 +1,5 @@
+$(function () {
+
 var containerId = '#tabs-container';
 var tabsId = '#tabs';
 var textId = '#intro__text';
@@ -44,4 +46,5 @@ $(document).ready(function() {
     $('#buttonBlack').hide();
     $('#buttonRed').show();
   });
+});
 });
