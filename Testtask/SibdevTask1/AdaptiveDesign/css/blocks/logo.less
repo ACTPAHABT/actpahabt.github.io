@@ -1,0 +1,40 @@
+// main: ../style.less
+
+
+.logo {
+  display: flex;
+  width: 100%;
+  padding: 41px 0 41px 41px;
+  align-items: center;
+}
+
+
+.logo__svg {
+  height: 50px;
+  width: 50px;
+  display: block;
+
+  @media @tablet {
+    height: 24px;
+    width: 24px;
+  }
+
+  @media @mobile {
+    display: none;
+  }
+}
+
+
+
+
+.logo__title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding-left: 10px;
+  font-size: 1.06rem;
+  text-transform: uppercase;
+
+  @media @tablet {
+    display: none;
+  }
+}

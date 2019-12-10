@@ -1,0 +1,45 @@
+// out: style.css, sourcemap: true, compress: true
+@import "vars";
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: @black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+/* Blocks */
+@import "Blocks/wrapper";
+@import "Blocks/sidebar";
+@import "Blocks/logo";
+@import "Blocks/nav";
+@import "Blocks/header";
+@import "Blocks/content";
+@import "Blocks/coupons";
+@import "Blocks/burger";
+@import "Blocks/search";
+
+
+// верстка сайдбара с меню 5 часов
+// верстка хедера с поиском 3 часов

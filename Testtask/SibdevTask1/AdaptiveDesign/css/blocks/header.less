@@ -1,0 +1,38 @@
+// main: ../style.less
+
+.header {
+  max-width: 1200px;
+  height: 200px;
+
+  background: @white;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+
+.headline {
+  font-family: Open Sans;
+  font-weight: 600;
+  padding-left: 60px;
+  padding-top: 40px;
+  font-size: 1.86rem;
+  opacity: 0.85;
+  text-shadow: 2px 2px 4px fade(@black, 10%);
+
+
+
+  @media @notebook {
+    text-align: right;
+    padding-left: 0px;
+    padding-right: 26px;
+    padding-top: 31px;
+    margin-left: 50px;
+  }
+
+  @media @mobile {
+    padding-right: 20px;
+    padding-top: 37px;
+    margin-left: 50px;
+    font-size: 1.6rem;
+
+  }
+}

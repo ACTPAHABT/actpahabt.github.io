@@ -1,0 +1,184 @@
+// main: ../style.less
+
+.coupons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 50px ;
+  background: @gray-light;
+  border-bottom: 1px solid @black;
+
+  @media @notebook {
+    padding: 16px 16px ;
+  }
+  @media @mobile {
+    padding: 16px 10px ;
+  }
+}
+
+.coupon__btn {
+  margin: 10px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border-width: 0;
+  padding: 0;
+  font-size: 1.06rem;
+  color: @black;
+  text-decoration: none;
+  background: none;
+  font-family: inherit;
+  line-height: 1.1;
+  text-align: center;
+  cursor: pointer;
+  width: 346px;
+  height: 161px;
+  text-align: left;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media @notebook {
+    width: 286px;
+    height: 144px;
+  }
+
+  @media @mobile {
+    width: 268px;
+    height: 130px;
+  }
+}
+
+.coupon__top {
+  width: 100%;
+  height: 50%;
+  border-radius: 6px;
+  border: 1px solid @white;
+  background: @white;
+  box-shadow: 1px 2px 5px fade(@black, 35%);
+  transition: border 0.2s linear, box-shadow 0.2s linear;
+}
+
+.coupon__bottom {
+  margin-top: -1px;
+  width: 100%;
+  height: 50%;
+  border-radius: 6px;
+  border: 1px solid @white;
+  background: @white;
+  box-shadow: 1px 3px 5px fade(@black, 35%);
+  transition: border 0.2s linear, box-shadow 0.2s linear;
+}
+
+.line__top {
+  margin-top: -3px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-bottom: 4px solid @white;
+}
+
+.coupon__btn:hover .coupon__top {
+  border: 1px solid @red;
+  box-shadow: 2px 2px 5px fade(@black, 15%);
+}
+
+.coupon__btn:hover .coupon__bottom {
+  border: 1px solid @red;
+  box-shadow: 2px 3px 5px fade(@black, 15%);
+}
+
+.coupon__title {
+  padding-left: 20px;
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 1.06rem;
+  color: @black;
+  font-weight: 700;
+
+  @media @notebook {
+  font-size: 0.93rem;
+  }
+
+  @media @mobile {
+  font-size: 0.8rem;
+  }
+}
+
+.coupon__description {
+  padding-left: 20px;
+  padding-top: 4px;
+  font-family: Roboto;
+  font-size: 1.06rem;
+  opacity: 0.5;
+  color: @black;
+  font-weight: 400;
+
+  @media @notebook {
+  font-size: 0.93rem;
+  }
+
+  @media @mobile {
+  font-size: 0.8rem;
+  }
+}
+
+.coupon__num {
+  padding-left: 20px;
+  padding-top: 8px;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 2.4rem;
+  color: @red;
+  font-weight: 500;
+
+  @media @notebook {
+    padding-top: 0px;
+
+  }
+
+
+  @media @mobile {
+    padding-top: 2px;
+
+  font-size: 1.86rem;
+  }
+}
+
+.coupon__label {
+  padding-left: 20px;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 1.06rem;
+  opacity: 0.5;
+  color: @black;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+
+  @media @notebook {
+    padding-top: 2px;
+
+  }
+
+  @media @mobile {
+  font-size: 0.8rem;
+  }
+}
+
+.coupon__img {
+  position: absolute;
+  height: 158px;
+  top: 50%;
+  right: 0px;
+  transform: translate(0, -50%);
+
+  @media @notebook {
+  height: 144px;
+  }
+
+  @media @mobile {
+  height: 130px;
+  }
+}
